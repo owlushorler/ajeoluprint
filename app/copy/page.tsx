@@ -1,8 +1,10 @@
 // components/CopyToClipboardButton.js  
+"use client"
 import { useState } from 'react';  
 import copy from 'clipboard-copy';  
 
-const CopyToClipboardButton = ({ text }) => {  
+
+const CopyToClipboardButton = ({ text }:any) => {  
   const [isCopied, setIsCopied] = useState(false);  
 
   const handleCopyClick = async () => {  
@@ -17,9 +19,11 @@ const CopyToClipboardButton = ({ text }) => {
   };  
 
   return (  
-    <button onClick={handleCopyClick}>  
+    <div>
+    <div onClick={handleCopyClick}>  
       {isCopied ? <img className='m-4 h-4' src='https://i.ibb.co/cwRxWTv/copy.png'  alt='copy'/> : <img className='m-4 h-4' src='https://i.ibb.co/cwRxWTv/copy.png'  alt='copy'/>}  
-    </button>  
+    </div> 
+    </div> 
   );  
 };  
 
