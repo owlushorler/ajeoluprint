@@ -1,17 +1,17 @@
 'use client'  
 
 import { useState } from 'react';  
-import Image from 'next/image'; 
 import Carousel from './carousol'; 
 import Link from 'next/link';
 import CopyToClipboardButton from '../copy/page';
 
 function Navbar3() {  
-  const [isOpen, setIsOpen] = useState(false);  
+ // const [isOpen, setIsOpen] = useState(false);  
 
-  const toggleDropdown = () => {  
+ 
+ {/* const toggleDropdown = () => {  
     setIsOpen(!isOpen);  
-  };  
+  };  */}
      
 
   return (  

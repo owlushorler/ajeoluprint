@@ -1,9 +1,7 @@
-import Image from "next/image";
+
 import Homes from "./component/NotBar";
 import Navbar2 from "./component/navbar2";
 import Navbar3 from "./component/navbar3";
-import Carousel from "./component/carousol";
-import Services1 from "./component/navbar4";
 import Services2 from "./component/body";
 import Reviewss from "./component/body4";
 import Body2 from "./component/body2";

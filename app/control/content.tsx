@@ -1,16 +1,22 @@
 "use client"
 // pages/index.js  
 import { useEffect, useState } from 'react'; 
-import Image from 'next/image'; 
 import Reviewss from '../component/body4';
 import Footer from '../component/footer';
 import Homes from '../component/NotBar';
 import Navbar2 from '../component/navbar2';
 import CopyToClipboardButton from '../copy/page';
 import Link from 'next/link';
-export default function  Content (prop:any) {  
+
+ class dot {
+
+   name:any
+   title:any
+ }
+
+export default function  Content (prop:dot) {  
    const [users, setUsers] = useState([]);  
-   const [fit, setfit] = useState([])
+  // const [fit, setfit] = useState([])
 
    useEffect(() => {  
       const fetchUsers = async () => {  
@@ -32,7 +38,7 @@ export default function  Content (prop:any) {
      
    },[]);
    
-   const ream = users.filter((ele)=>{return ele.title == prop.title })
+   const ream = users.filter((ele:any)=>{return ele.title == prop.title })
 
    console.log(ream)
   
@@ -47,9 +53,9 @@ export default function  Content (prop:any) {
   
          <div> <div className='bg-red-800 text-white text-center m-3 ' >MAKE CALL NOW TO GET QUOTE</div>
          <div className=' m-10  flex flex-col items-center md:grid  md:grid-cols-2 md:mx-20 md:gap-5 md:items-center ' >
-            {ream.map((user) => (  
-               <div className='md:grid md:items-center shadow-2xl p-4 '>
-              <div   key={user.title}></div>  
+            {ream.map((user:any) => (  
+               <div key={user.title} className='md:grid md:items-center shadow-2xl p-4 '>
+              <div   ></div>  
               <div className='flex flex-row justify-center'> <img  className='h-64 w-96 ' src={user.picture}  alt='user'/> </div>
               <div className='text-xl text-center ' >  {user.name}  </div>
               <div  className=' flex flex-row items-center justify-center bg-blue-900 text-white rounded text-center ' >

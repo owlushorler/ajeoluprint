@@ -1,4 +1,4 @@
-import { useState } from 'react';  
+
 import Image from 'next/image';
 import charg from "../images/charger.jpg"
 import car from "../images/Car-Wrap-design.png"

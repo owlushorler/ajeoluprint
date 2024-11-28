@@ -1,5 +1,4 @@
 import React from 'react'; 
-import frame from "../images/frameall.jpg"
 import Image from 'next/image';
 import frameicon from "../images/frameIcon.png"
 import frame2 from "../images/images.png"

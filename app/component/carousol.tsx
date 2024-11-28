@@ -12,7 +12,7 @@ function Carousel() {
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);  
  
-    const images:any= [  
+    const images= [  
      image, 
     image01,  
     stamp
@@ -31,7 +31,7 @@ function Carousel() {
   }, [images.length]);  
 
 
-  const handlePrevClick = () => {  
+ {/*} const handlePrevClick = () => {  
     setCurrentImageIndex((prevIndex) =>  
       (prevIndex - 1 + images.length) % images.length  
     );  
@@ -39,7 +39,7 @@ function Carousel() {
 
   const handleNextClick = () => {  
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);  
-  };  
+  };  */}
 
   return (  
     <div className="relative w-full h-[300px] "> {/* Adjust height as needed */}  
